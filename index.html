@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="menu">
+        <div class="nav">
+            <div class="logo"><h2>Cat.com</h2></div>
+            <ul>
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#slider">Карусель</a></li>
+                <li><a href="#quotes">Цитаты</a></li>
+                <li><a href="#history-id">История</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header" id="main">
+        <img src="img/CAt.png" alt="">
+        <div class="header-container">
+            <h1>Лендинг про котов</h1>
+            <p>Здесь может быть текст, который как-то относиться к котам. Справа картинка кота.</p>
+        </div>
+    </div>
+    <div class="slideshow container" id="slider">
+        <h2> Карусель котов</h2>
+        <h3>Можете полистать котов</h3>
+        <div class="mySlides fade">
+         
+          <img src="img/cat.jpg" style="width:100%">
+        
+        </div>
+      
+        <div class="mySlides fade">
+        
+          <img src="img/cat2.jpg" style="width:100%">
+         
+        </div>
+      
+        <div class="mySlides fade">
+          
+          <img src="img/cat3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          
+            <img src="img/cat4.jpg" style="width:100%">
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div class="cat-quotes " id="quotes">
+         <div class="flex-container container">
+            <img src="img/cat_say.png" alt="">
+            
+            <div class="cat-quotes-inner">
+                <h2>Цитаты про котов</h2>
+                <span id="cat-say"></span>
+                <button id="cat-btn" onclick="showQuotes()" > Нажми на меня</button>
+            </div>
+        </div>
+      </div>
+      <div class="history" id="history-id">
+        <h2>История одомашнивания кошки. Даты и факты.</h2>
+        <div class="history-container container">
+            <img src="img/history_cat.jpg" alt="">  
+            
+            
+            <p> История происхождения кошки началась задолго до нашей эры. Первые упоминания о том, что кошка тесно живет с человеком были появились в 6000 веке до н.э.
+            </p>
+            <p>Если точно датировать, когда люди одомашнили кошку, то это произошло к 1600 году до н.э. египтянами. В Египте, как нигде обожествляли кошку и в 950 году они признали её официально  божеством.
+            </p>
+            <p>Дальнейшее распространение кошки по всему миру не заставило себя ждать. В Восточном Средиземноморье первыми появились черные кошки. Произошло это в 500 году, а вот в Индии кошки распространились к 200 году. В промежутке с 200 по 500 года римляне открывают для себя, что  кошки являются прекрасными охотниками на вредителей в хозяйстве – мышей, крыс и т.п. В Британии, как и в 500 году особой популярностью пользовались кошки с рыжим окрасом. Египтяне были первыми, кто описал кошку в истории, как домашнее животное. Как говорилось выше, кошка была для них божеством. И тому доказательством был построенный в городе Бубастис огромный храм в честь богини плодородия Баст с головой кошки. Каждый год проходил праздник в ее честь, где собирались около 750 000 почитателей.</p>
+        
+        
+        </div>
+
+      </div>
+
+      <div class="footer">
+          <div class="container">
+          <h3>Автор сайта Филимонов Сергей.</h3>
+        </div>
+      </div>
+      <script src="script.js"></script>
+
+
+</html>

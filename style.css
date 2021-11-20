@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*menu*/
+.menu {
+    position: fixed;
+    z-index: 10000;
+    background-color: #253131;
+    height: 72px;
+    width: 100%;
+    border-bottom: 1px solid #FDC332;
+
+}
+
+.logo {
+    color: #FDC332;
+}
+
+.nav {
+    padding: 15px;
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+.header {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #253131;
+}
+
+.header img {
+    float: right;
+    height: 90vh;
+}
+
+.header-container {
+    max-width: 1260px;
+    margin: auto;
+    padding-top: 170px;
+
+}
+
+h1 {
+    color: white;
+    font-size: 72px;
+}
+
+.header p {
+    font-size: 36px;
+    color: #eeeeee;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1260px;
+    margin: auto;
+}
+
+.slideshow {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.slideshow h2 {
+    font-size: 48px;
+
+}
+
+.slideshow h3 {
+    margin: 30px;
+    font-size: 36px;
+    color: #253131;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+
+.prev,
+.next {
+    margin: auto;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: rgb(187, 185, 185);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+
+}
+
+
+
+.prev:hover,
+.next:hover {
+    background-color: #FDC332;
+    color: black;
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+
+}
+
+.cat-say-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cat-say-container img {
+    max-width: 300px;
+
+}
+
+#cat-btn {
+    max-width: 200px;
+}
+
+/* Fading animation */
+.fade {
+    opacity: 0;
+    animation: ani 1.5s forwards;
+}
+
+
+.cat-quotes {
+    margin-top: 140px;
+    height: 70vh;
+    background-image: url("img/bacgroind_quotes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cat-quotes img {
+    margin-top: 150px;
+
+}
+
+.cat-quotes-inner {
+    text-align: center;
+    margin-top: 150px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#cat-say {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 447px;
+    height: 180px;
+    padding: 12px;
+    background-color: #FEE29E;
+}
+
+#cat-btn {
+    width: 192px;
+    height: 48px;
+    background-color: #253131;
+    border: none;
+    color: white;
+    margin: auto;
+}
+
+#cat-btn:hover {
+    color: #FDC332;
+}
+
+h2 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.history h2 {
+    margin: 70px;
+}
+
+.history img {
+    float: left;
+}
+
+.history p {
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.footer {
+
+    text-align: center;
+    margin-top: 100px;
+    max-height: 150px;
+    background-color: #253131;
+    color: white;
+    padding: 80px;
+}
+
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
